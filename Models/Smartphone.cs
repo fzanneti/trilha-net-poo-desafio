@@ -6,9 +6,9 @@ namespace DesafioPOO.Models
     {
         public string Numero { get; set; }
         // TODO: Implementar as propriedades faltantes de acordo com o diagrama
-        private string Modelo { get; set; }
-        private string Imei { get; set; }
-        private int Memoria { get; set; }
+        protected string Modelo { get; set; }
+        protected string Imei { get; set; }
+        protected int Memoria { get; set; }
 
         public Smartphone(string numero, string modelo, string imei, int memoria)
         {
@@ -18,7 +18,7 @@ namespace DesafioPOO.Models
             Imei = imei;
             Memoria = memoria;
 
-            Console.WriteLine($"Ficha técnica:\n - {numero}\n - {modelo}\n - {imei}\n - {memoria}");
+            Console.WriteLine($"Ficha técnica:\n - Número: {numero}\n - Modelo: {modelo}\n - Imei: {imei}\n - Memória: {memoria}");
         }
 
         public void Ligar()
