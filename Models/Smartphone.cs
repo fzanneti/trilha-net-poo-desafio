@@ -17,6 +17,8 @@ namespace DesafioPOO.Models
             Modelo = modelo;
             Imei = imei;
             Memoria = memoria;
+
+            Console.WriteLine($"Ficha técnica:\n - {numero}\n - {modelo}\n - {imei}\n - {memoria}");
         }
 
         public void Ligar()
